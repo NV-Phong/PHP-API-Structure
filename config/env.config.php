@@ -1,6 +1,4 @@
 <?php
-require __DIR__ . '/../vendor/autoload.php';
-
 $ENVIRONMENT = getenv('APP_ENV') ?: 'development'; //TODO: Change to production
 $DOTENV = Dotenv\Dotenv::createImmutable(__DIR__ . '/../', ".env.{$ENVIRONMENT}");
 $DOTENV->safeLoad();

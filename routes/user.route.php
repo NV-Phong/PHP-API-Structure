@@ -1,8 +1,9 @@
 <?php
 
-require_once __DIR__ . '/../app/controller/user.controller.php';
+require_once __DIR__ . '/../config/factory.config.php';
 
-$router = new Router();
+$router = Factory::createRouter();
+$userController = Factory::createUserController();
 
-$router->get('/', [new UserController(), 'getUsers']);
-$router->get('/workspaces', [new UserController(), 'getWorkSpaces']);
+$router->get('/', [$userController, 'getUsers']);
+$router->post('/', [$userController, 'addUser']);

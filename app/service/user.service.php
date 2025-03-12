@@ -1,20 +1,21 @@
 <?php
 
+require_once __DIR__ . '/../../config/database.config.php';
+require_once __DIR__ . '/../model/user.model.php';
+
 class UserService
 {
-   public function getUsers()
-   {
-      return [
-         ['id' => 1, 'name' => 'Nguyen Van A', 'email' => 'a@example.com'],
-         ['id' => 2, 'name' => 'Tran Thi B', 'email' => 'b@example.com'],
-      ];
-   }
+    public function getUsers()
+    {
+        return User::all(); // Lấy tất cả người dùng
+    }
 
-   public function getWorkSpaces()
-   {
-      return [
-         ['id' => 1, 'name' => 'UI-Engineer', 'description' => 'company'],
-         ['id' => 2, 'name' => 'WorkSpace', 'description' => 'project'],
-      ];
-   }
+    public function addUser($name, $email)
+    {
+        $user = new User();
+        $user->name = $name;
+        $user->email = $email;
+        $user->save();
+        return $user->id;
+    }
 }

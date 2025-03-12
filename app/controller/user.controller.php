@@ -1,13 +1,14 @@
 <?php
+
 require_once __DIR__ . '/../service/user.service.php';
 
 class UserController
 {
     private $userService;
 
-    public function __construct()
+    public function __construct(UserService $userService = null)
     {
-        $this->userService = new UserService();
+        $this->userService = $userService ?? new UserService();
     }
 
     public function getUsers()
@@ -17,10 +18,14 @@ class UserController
         echo json_encode($users);
     }
 
-    public function getWorkSpaces()
+    public function addUser()
     {
-        $workspaces = $this->userService->getWorkSpaces();
+        $data = json_decode(file_get_contents('php://input'), true);
+        $name = $data['Name'];
+        $email = $data['Email'];
+
+        $userId = $this->userService->addUser($name, $email);
         header('Content-Type: application/json');
-        echo json_encode($workspaces);
+        echo json_encode(['message' => 'User added', 'id' => $userId]);
     }
 }

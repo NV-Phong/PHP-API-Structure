@@ -1,4 +1,4 @@
-# Tài liệu hướng dẫn `vlucas/phpdotenv`
+# TÀI LIỆU HƯỚNG DẪN `vlucas/phpdotenv`
 
 ## Giới thiệu
 `vlucas/phpdotenv` là một thư viện PHP giúp tải biến môi trường từ tệp `.env` vào `$_ENV` và `$_SERVER`, giúp quản lý cấu hình ứng dụng dễ dàng hơn.

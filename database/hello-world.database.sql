@@ -39,8 +39,10 @@ CREATE TABLE PRODUCTS (
 INSERT INTO
     PRODUCTS (Name, Description, Image, Price)
 VALUES
-    ('Laptop Dell XPS 13', 'High-performance ultrabook', 'dell-xps-13.jpg', 1299.99),
-    ('iPhone 13 Pro', 'Latest Apple smartphone', 'iphone-13-pro.jpg', 999.99),
-    ('Sony WH-1000XM4', 'Wireless noise-canceling headphones', 'sony-headphones.jpg', 349.99),
-    ('Samsung 4K TV', '65-inch QLED Smart TV', 'samsung-tv.jpg', 1499.99),
-    ('Nintendo Switch', 'Portable gaming console', 'nintendo-switch.jpg', 299.99);
+    ('Laptop Dell XPS 13', 'High-performance ultrabook', 'https://i.pinimg.com/736x/6c/40/85/6c40855fba53f5e7e20ffcc9b0f9bbc6.jpg', 1299.99),
+    ('iPhone 13 Pro', 'Latest Apple smartphone', 'https://i.pinimg.com/736x/89/be/83/89be8350f3e37ebdbed9cd5ba16c0f69.jpg', 999.99),
+    ('Sony WH-1000XM4', 'Wireless noise-canceling headphones', 'https://i.pinimg.com/736x/eb/b1/68/ebb16890a316de11109383963b80de91.jpg', 349.99),
+    ('Samsung 4K TV', '65-inch QLED Smart TV', 'https://i.pinimg.com/736x/27/99/6a/27996a3ab1da1cf5a7341e32f3c88cdc.jpg', 1499.99),
+    ('Nintendo Switch', 'Portable gaming console', 'https://i.pinimg.com/736x/3a/76/b9/3a76b93699349cffb235f4ba2829445a.jpg', 299.99);
+
+`

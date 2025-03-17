@@ -26,16 +26,16 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Product List</h1>
+    <h1 style="text-align: center;">PRODUCT LIST</h1>
     <?php if (!empty($products)): ?>
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Image</th>
-                    <th>Price</th>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>IMAGE</th>
+                    <th>PRICE</th>
                 </tr>
             </thead>
             <tbody>

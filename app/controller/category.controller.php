@@ -18,7 +18,7 @@ class CategoryController
        echo json_encode($category);
    }
 
-   public function addProduct()
+   public function addCategory()
    {
       $data = json_decode(file_get_contents('php://input'), true);
       $name = $data['Name'];
@@ -32,5 +32,10 @@ class CategoryController
     {
         $category = $this->categoryService->getCategories();
         include __DIR__ . '/../../view/category/list.category.php';
+    }
+
+   public function displayAddCategories()
+    {
+        include __DIR__ . '/../../view/category/add.category.php';
     }
 }

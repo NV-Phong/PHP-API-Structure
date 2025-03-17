@@ -35,4 +35,9 @@ class ProductController
         $products = $this->productService->getProducts();
         include __DIR__ . '/../../view/product/list.product.php';
     }
+
+   public function displayAddProducts()
+    {
+        include __DIR__ . '/../../view/product/add.product.php';
+    }
 }

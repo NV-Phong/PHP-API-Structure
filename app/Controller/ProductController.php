@@ -1,7 +1,7 @@
 <?php
-// namespace Phong\PhpApiStructure\controller;
+namespace Phong\PhpApiStructure\Controller;
 
-require_once __DIR__ . '/../service/product.service.php';
+use Phong\PhpApiStructure\Service\ProductService;
 
 class ProductController
 {

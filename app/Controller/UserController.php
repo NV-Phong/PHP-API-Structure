@@ -1,7 +1,6 @@
 <?php
-// namespace Phong\PhpApiStructure\controller;
-
-require_once __DIR__ . '/../service/user.service.php';
+namespace Phong\PhpApiStructure\Controller;
+use Phong\PhpApiStructure\Service\UserService;
 
 class UserController
 {

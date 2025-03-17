@@ -1,8 +1,9 @@
 <?php
-// namespace Phong\PhpApiStructure\service;
+namespace Phong\PhpApiStructure\Service;
+
+use Phong\PhpApiStructure\Model\Category;
 
 require_once __DIR__ . '/../../config/database.config.php';
-require_once __DIR__ . '/../model/category.model.php';
 
 class CategoryService
 {

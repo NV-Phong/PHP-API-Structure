@@ -1,8 +1,10 @@
 <?php
-// namespace Phong\PhpApiStructure\service;
+namespace Phong\PhpApiStructure\Service;
+
+use Phong\PhpApiStructure\Model\Product;
 
 require_once __DIR__ . '/../../config/database.config.php';
-require_once __DIR__ . '/../model/product.model.php';
+
 
 class ProductService
 {

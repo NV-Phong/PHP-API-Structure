@@ -1,7 +1,7 @@
 <?php
-// namespace Phong\PhpApiStructure\controller;
+namespace Phong\PhpApiStructure\Controller;
 
-require_once __DIR__ . '/../service/category.service.php';
+use Phong\PhpApiStructure\Service\CategoryService;
 
 class CategoryController
 {

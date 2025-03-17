@@ -1,12 +1,13 @@
 <?php
 
-require_once __DIR__ . '/../app/controller/user.controller.php';
-require_once __DIR__ . '/../app/controller/product.controller.php';
-require_once __DIR__ . '/../app/controller/category.controller.php';
-require_once __DIR__ . '/../app/service/category.service.php';
-require_once __DIR__ . '/../app/service/user.service.php';
-require_once __DIR__ . '/../app/service/product.service.php';
 require_once __DIR__ . '/router.config.php';
+
+use Phong\PhpApiStructure\Service\UserService;
+use Phong\PhpApiStructure\Controller\UserController;
+use Phong\PhpApiStructure\Service\ProductService;
+use Phong\PhpApiStructure\Controller\ProductController;
+use Phong\PhpApiStructure\Service\CategoryService;
+use Phong\PhpApiStructure\Controller\CategoryController;
 
 class Factory
 {

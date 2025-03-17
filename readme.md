@@ -1,9 +1,9 @@
-# PHP API Structure
+# PHP API STRUCTURE
 
-## Giới thiệu
+### INTRODUCE
 Dự án **PHP API Structure** là một Server API đơn giản được xây dựng bằng PHP thuần, hỗ trợ tự động tải (`autoload`) theo tiêu chuẩn PSR-4.
 
-## Cấu trúc thư mục
+### PROJECT STRUCTURE
 ```
 PHP-API-Structure/
 │── app/             # Chứa mã nguồn chính của API
@@ -19,14 +19,14 @@ PHP-API-Structure/
 │── readme.md        # Tài liệu hướng dẫn
 ```
 
-## Cài đặt
+### INSTALL
 Trước tiên, cần cài đặt các package cần thiết bằng Composer:
 
 ```sh
 composer install
 ```
 
-## Chạy ứng dụng
+### RUN PROJECT
 Chạy ứng dụng với lệnh:
 
 ```sh
@@ -43,6 +43,6 @@ Bạn cũng có thể chạy trực tiếp bằng:
 php -S localhost:3000 -t app
 ```
 
-## Tác giả
+### AUTHOR
 - **NV-Phong**
 - Email: `ui.engineer.workspace@gmail.com`

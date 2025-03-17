@@ -11,3 +11,5 @@ $router->post('/', [$userController, 'addUser']);
 
 $router->get('/products', [$productController, 'getProducts']);
 $router->post('/products', [$productController, 'addProduct']);
+
+$router->get('/view/products', [$productController, 'displayProducts']);

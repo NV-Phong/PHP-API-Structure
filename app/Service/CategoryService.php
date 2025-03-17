@@ -1,9 +1,6 @@
 <?php
 namespace Phong\PhpApiStructure\Service;
-
 use Phong\PhpApiStructure\Model\Category;
-
-require_once __DIR__ . '/../../config/database.config.php';
 
 class CategoryService
 {

@@ -16,7 +16,7 @@
 	"scripts": {
 		"start": [
 			"Composer\\Config::disableProcessTimeout",
-			"php -S localhost:3000 -t app"
+			"php -S localhost:3000 -t public"
 
 		]
 	},

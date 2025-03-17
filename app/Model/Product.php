@@ -1,6 +1,5 @@
 <?php
 namespace Phong\PhpApiStructure\Model;
-
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model

@@ -1,9 +1,6 @@
 <?php
 namespace Phong\PhpApiStructure\Service;
-
 use Phong\PhpApiStructure\Model\User;
-
-require_once __DIR__ . '/../../config/database.config.php';
 
 class UserService
 {

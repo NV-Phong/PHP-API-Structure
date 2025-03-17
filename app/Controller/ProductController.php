@@ -1,6 +1,5 @@
 <?php
 namespace Phong\PhpApiStructure\Controller;
-
 use Phong\PhpApiStructure\Service\ProductService;
 
 class ProductController

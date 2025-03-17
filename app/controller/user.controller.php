@@ -1,4 +1,5 @@
 <?php
+namespace Phong\PhpApiStructure\controller;
 
 require_once __DIR__ . '/../service/user.service.php';
 

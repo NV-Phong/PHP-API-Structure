@@ -1,4 +1,6 @@
 <?php
+namespace Phong\PhpApiStructure\controller;
+
 require_once __DIR__ . '/../service/product.service.php';
 
 class ProductController

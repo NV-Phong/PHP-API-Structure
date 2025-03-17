@@ -29,15 +29,4 @@ class ProductController
       header('Content-Type: application/json');
       echo json_encode(['message' => 'Product added', 'id' => $productID]);
    }
-//--------------------------------------------------MVC--------------------------------------------------//CONFIG--------------------------------------------------//
-   public function displayProducts()
-    {
-        $products = $this->productService->getProducts();
-        include __DIR__ . '/../../view/product/list.product.php';
-    }
-
-   public function displayAddProducts()
-    {
-        include __DIR__ . '/../../view/product/add.product.php';
-    }
 }

@@ -27,15 +27,4 @@ class CategoryController
       header('Content-Type: application/json');
       echo json_encode(['message' => 'Category added', 'id' => $categoryID]);
    }
-//--------------------------------------------------MVC--------------------------------------------------//CONFIG--------------------------------------------------//
-   public function displayCategories()
-    {
-        $category = $this->categoryService->getCategories();
-        include __DIR__ . '/../../view/category/list.category.php';
-    }
-
-   public function displayAddCategories()
-    {
-        include __DIR__ . '/../../view/category/add.category.php';
-    }
 }

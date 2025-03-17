@@ -13,11 +13,5 @@ $router->post('/', [$userController, 'addUser']);
 $router->get('/products', [$productController, 'getProducts']);
 $router->post('/products', [$productController, 'addProduct']);
 
-$router->get('/view/products', [$productController, 'displayProducts']);
-$router->get('/view/add-products', [$productController, 'displayAddProducts']);
-
 $router->get('/categories', [$categoryController, 'getCategories']);
 $router->post('/categories', [$categoryController, 'addCategory']);
-
-$router->get('/view/categories', [$categoryController, 'displayCategories']);
-$router->get('/view/add-categories', [$categoryController, 'displayAddCategories']);

@@ -1,5 +1,5 @@
 <?php
-namespace Phong\PhpApiStructure\service;
+// namespace Phong\PhpApiStructure\service;
 
 require_once __DIR__ . '/../../config/database.config.php';
 require_once __DIR__ . '/../model/user.model.php';

@@ -3,10 +3,10 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Category extends Model
 {
-    protected $table = 'users';
-    protected $fillable = ['name', 'email'];
+    protected $table = 'category';
+    protected $fillable = ['name', 'description'];
     public $timestamps = true;
 }
 

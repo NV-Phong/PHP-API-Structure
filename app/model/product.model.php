@@ -1,5 +1,5 @@
 <?php
-namespace Phong\PhpApiStructure\model;
+// namespace Phong\PhpApiStructure\model;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Phong\PhpApiStructure\controller;
+// namespace Phong\PhpApiStructure\controller;
 
 require_once __DIR__ . '/../service/product.service.php';
 
@@ -33,6 +33,6 @@ class ProductController
    public function displayProducts()
     {
         $products = $this->productService->getProducts();
-        include __DIR__ . '/../../view/product_list.php';
+        include __DIR__ . '/../../view/product/list.product.php';
     }
 }

@@ -40,7 +40,7 @@ Lệnh này sẽ:
 Bạn cũng có thể chạy trực tiếp bằng:
 
 ```sh
-php -S localhost:3000 -t app
+php -S localhost:3000 -t public
 ```
 
 ### AUTHOR

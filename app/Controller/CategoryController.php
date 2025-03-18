@@ -1,29 +1,42 @@
 <?php
 namespace Phong\PhpApiStructure\Controller;
+
 use Phong\PhpApiStructure\Service\CategoryService;
+use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 
 class CategoryController
 {
-   private $categoryService;
-   public function __construct(CategoryService $categoryService)
-   {
-       $this->categoryService = $categoryService;
-   }
+    private CategoryService $categoryService;
 
-   public function getCategories()
-   {
-       $category = $this->categoryService->getCategories();
-       header('Content-Type: application/json');
-       echo json_encode($category);
-   }
+    public function __construct(CategoryService $categoryService)
+    {
+        $this->categoryService = $categoryService;
+    }
 
-   public function addCategory()
-   {
-      $data = json_decode(file_get_contents('php://input'), true);
-      $name = $data['Name'];
-      $description = $data['Description'];
-      $categoryID = $this->categoryService->addCategory($name, $description);
-      header('Content-Type: application/json');
-      echo json_encode(['message' => 'Category added', 'id' => $categoryID]);
-   }
+    public function getCategories(): JsonResponse
+    {
+        $categories = $this->categoryService->getCategories();
+        return new JsonResponse($categories);
+    }
+
+    public function addCategory(Request $request): JsonResponse
+    {
+        $name = $request->input('Name');
+        $description = $request->input('Description');
+
+        // Kiểm tra dữ liệu đầu vào
+        if (!$name) {
+            return new JsonResponse(
+                ['error' => 'Tên danh mục là bắt buộc'],
+                400 // Yêu cầu không hợp lệ
+            );
+        }
+
+        $categoryID = $this->categoryService->addCategory($name, $description);
+        return new JsonResponse([
+            'message' => 'Danh mục đã được thêm',
+            'id' => $categoryID
+        ], 201); // Tạo thành công
+    }
 }

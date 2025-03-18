@@ -1,20 +1,25 @@
 <?php
 namespace Phong\PhpApiStructure\Service;
+
 use Phong\PhpApiStructure\Model\User;
+use Illuminate\Http\Request;
 
 class UserService
 {
     public function getUsers()
     {
-        return User::all(); // Lấy tất cả người dùng
+        return User::where('IsDeleted', false)->get();
     }
 
-    public function addUser($name, $email)
+    public function addUser(Request $request)
     {
-        $user = new User();
-        $user->name = $name;
-        $user->email = $email;
-        $user->save();
-        return $user->id;
+        $user = User::create([
+            'UserName' => $request->input('UserName', ''),
+            'Email' => $request->input('Email', ''),
+            'PhoneNumber' => $request->input('PhoneNumber'), // Lấy từ request, mặc định là chuỗi rỗng
+            'IsDeleted' => $request->input('IsDeleted', false)
+        ]);
+        
+        return $user->IDUser;
     }
 }

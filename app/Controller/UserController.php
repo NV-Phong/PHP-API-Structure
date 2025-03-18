@@ -17,26 +17,25 @@ class UserController
     public function getUsers(): JsonResponse
     {
         $users = $this->userService->getUsers();
-        return new JsonResponse($users);
+        return new JsonResponse([
+            'message' => 'Danh sách người dùng',
+            'data' => $users
+        ], 200);
     }
 
     public function addUser(Request $request): JsonResponse
     {
-        $name = $request->input('Name');
-        $email = $request->input('Email');
-
-        // Kiểm tra dữ liệu đầu vào
-        if (!$name || !$email) {
-            return new JsonResponse(
-                ['error' => 'Tên và Email là bắt buộc'],
-                400 // Yêu cầu không hợp lệ
-            );
+        try {
+            $userId = $this->userService->addUser($request); // Truyền trực tiếp Request
+            return new JsonResponse([
+                'message' => 'Người dùng đã được thêm thành công',
+                'id' => $userId
+            ], 201);
+        } catch (\Exception $e) {
+            return new JsonResponse([
+                'error' => 'Không thể thêm người dùng',
+                'message' => $e->getMessage()
+            ], 500);
         }
-
-        $userId = $this->userService->addUser($name, $email);
-        return new JsonResponse([
-            'message' => 'Người dùng đã được thêm',
-            'id' => $userId
-        ], 201); // Tạo thành công
     }
 }

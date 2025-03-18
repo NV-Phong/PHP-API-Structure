@@ -1,12 +1,11 @@
 <?php
 namespace Phong\PhpApiStructure\Model;
-use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class User extends Entity
 {
-    protected $table = 'users';
-    protected $fillable = ['name', 'email'];
-    public $timestamps = false;
-}
+    protected $table = 'USERS';
+    protected $primaryKey = 'IDUser';
+    public $timestamps = true;
+    protected $fillable = ['Name', 'Email', 'PhoneNumber', 'IsDeleted'];
 
-?>
+}

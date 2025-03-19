@@ -38,4 +38,13 @@ class AnhMoiController
       }
    }
 
+   public function createAnhMoi(Request $request): JsonResponse
+   {
+      $anhMoi = $this->AnhMoiService->addNew($request->json()->all());
+      return new JsonResponse([
+         'message' => 'Tạo Anh Moi thành công',
+         'data' => $anhMoi
+      ], 201);
+   }
+
 }

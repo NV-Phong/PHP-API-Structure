@@ -14,4 +14,9 @@ class AnhMoiService
     {
         return AnhMoi::where('IsDeleted', false)->findOrFail($id);
     }
+
+    public function addNew($data)
+    {
+        return AnhMoi::create($data);
+    }
 }

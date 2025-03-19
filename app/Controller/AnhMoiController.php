@@ -1,7 +1,6 @@
 <?php
-namespace Phong\PhpApiStructure\Controller;
-
-use Phong\PhpApiStructure\Service\AnhMoiService;
+namespace WorkSpace\Controller;
+use WorkSpace\Service\AnhMoiService;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 

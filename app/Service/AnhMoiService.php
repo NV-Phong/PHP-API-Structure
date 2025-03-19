@@ -1,7 +1,7 @@
 <?php
-namespace Phong\PhpApiStructure\Service;
+namespace WorkSpace\Service;
 
-use Phong\PhpApiStructure\Model\AnhMoi;
+use WorkSpace\Model\AnhMoi;
 
 class AnhMoiService
 {

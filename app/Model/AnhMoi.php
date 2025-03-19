@@ -1,5 +1,5 @@
 <?php
-namespace Phong\PhpApiStructure\Model;
+namespace WorkSpace\Model;
 
 class AnhMoi extends Entity
 {

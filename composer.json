@@ -4,7 +4,7 @@
 	"description": "PHP API Structure",
 	"autoload": {
 		"psr-4": {
-			"Phong\\PhpApiStructure\\": "app/"
+			"WorkSpace\\": "app/"
 		}
 	},
 	"authors": [

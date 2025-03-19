@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Routing\Router;
-use Phong\PhpApiStructure\Controller\AnhMoiController;
+use WorkSpace\Controller\AnhMoiController;
 
 return function (Router $router) {
    $router->get('/', [AnhMoiController::class, 'getAnhMois']);

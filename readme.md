@@ -1,4 +1,4 @@
-<h1 style="text-align: center">WORKSPACE-SERVER</h1>
+<h1 align="center">WORKSPACE-SERVER</h1>
 
 ### INTRODUCE
 Dự án **WorkSpace-Server** là một Server API đơn giản được xây dựng bằng PHP, hỗ trợ tự động tải (`autoload`) theo tiêu chuẩn PSR-4.

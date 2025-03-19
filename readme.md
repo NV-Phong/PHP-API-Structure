@@ -1,18 +1,20 @@
-# PHP API STRUCTURE
+# WORKSPACE-SERVER
 
 ### INTRODUCE
-Dự án **PHP API Structure** là một Server API đơn giản được xây dựng bằng PHP thuần, hỗ trợ tự động tải (`autoload`) theo tiêu chuẩn PSR-4.
+Dự án **WorkSpace-Server** là một Server API đơn giản được xây dựng bằng PHP, hỗ trợ tự động tải (`autoload`) theo tiêu chuẩn PSR-4.
 
 ### PROJECT STRUCTURE
 ```
 PHP-API-Structure/
 │── app/             # Chứa mã nguồn chính của API
 │── config/          # Cấu hình hệ thống
-│── routes/          # Định nghĩa các route của API
+│── database/        # Chứa mã SQL
+│── docs/            # Giải thích về các khái niệm và các packages được sử dụng trong dự án
+│── public/          # Là điểm đầu vào của hệ thống
+│── routes/          # Định nghĩa các route của hệ thống
 │── test/            # Thư mục chứa các test case
 │── vendor/          # Thư mục chứa các gói Composer
 │── .env.development # File cấu hình môi trường phát triển
-│── .env.production  # File cấu hình môi trường sản xuất
 │── .gitignore       # Các file cần bỏ qua khi push lên Git
 │── composer.json    # Định nghĩa các package cần thiết
 │── composer.lock    # Lưu trạng thái package đã cài đặt
@@ -42,6 +44,11 @@ Bạn cũng có thể chạy trực tiếp bằng:
 ```sh
 php -S localhost:3000 -t public
 ```
+
+Hoặc nếu dùng XAMPP :
+- Đặt dự án trong thư mục `htdocs`
+- Trỏ đến thư mục public để chạy dự án
+- Ví dụ : `http://localhost/WS-Server/public/`
 
 ### AUTHOR
 - **NV-Phong**

@@ -10,7 +10,7 @@ class AnhMoiService
         return AnhMoi::where('IsDeleted', false)->get();
     }
 
-    public function getById($id)
+    public function getByID($id)
     {
         return AnhMoi::where('IsDeleted', false)->findOrFail($id);
     }

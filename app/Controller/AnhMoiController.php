@@ -20,6 +20,22 @@ class AnhMoiController
       return new JsonResponse([
          'message' => 'Danh sách Anh Moi',
          'data' => $anhmois
-      ], 200);
+      ]);
    }
+
+   public function getAnhMoiByID($id): JsonResponse
+   {
+      $anhmoi = $this->AnhMoiService->getByID($id);
+      if ($anhmoi) {
+         return new JsonResponse([
+            'message' => 'Anh Moi',
+            'data' => $anhmoi
+         ]);
+      } else {
+         return new JsonResponse([
+            'message' => 'Anh Moi không tồn tại',
+         ]);
+      }
+   }
+
 }

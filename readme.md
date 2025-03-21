@@ -1,7 +1,7 @@
-<h1 align="center">PHP-LEARNING</h1>
+<h1 align="center">WS-SERVER</h1>
 
 ### INTRODUCE
-Dự án **PHP-Learning** là một Server API đơn giản được xây dựng bằng PHP, hỗ trợ tự động tải (`autoload`) theo tiêu chuẩn PSR-4.
+Dự án **WS-Server** là một Server API đơn giản được xây dựng bằng PHP, hỗ trợ tự động tải (`autoload`) theo tiêu chuẩn PSR-4.
 
 ### PROJECT STRUCTURE
 ```
@@ -48,7 +48,7 @@ php -S localhost:3000 -t public
 Hoặc nếu dùng XAMPP :
 - Đặt dự án trong thư mục `htdocs`
 - Trỏ đến thư mục public để chạy dự án
-- Ví dụ : `http://localhost/PHP-Learning/public/`
+- Ví dụ : `http://localhost/WS-Server/public/`
 
 ### AUTHOR
 - **NV-Phong**

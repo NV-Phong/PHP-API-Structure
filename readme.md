@@ -6,19 +6,19 @@ Dự án **WS-Server** là một Server API đơn giản được xây dựng b�
 ### PROJECT STRUCTURE
 ```
 PHP-API-Structure/
-│── app/             # Chứa mã nguồn chính của API
-│── config/          # Cấu hình hệ thống
-│── database/        # Chứa mã SQL
-│── docs/            # Tài liệu hướng dẫn
-│── public/          # Là điểm đầu vào của hệ thống
-│── routes/          # Định nghĩa các route của hệ thống
-│── test/            # Thư mục chứa các test case
-│── vendor/          # Thư mục chứa các gói Composer
-│── .env.development # File cấu hình môi trường phát triển
-│── .gitignore       # Các file cần bỏ qua khi push lên Git
-│── composer.json    # Định nghĩa các package cần thiết
-│── composer.lock    # Lưu trạng thái package đã cài đặt
-│── readme.md        # Tài liệu hướng dẫn
+◉ app/             # Chứa mã nguồn chính của API
+◉ config/          # Cấu hình hệ thống
+◉ database/        # Chứa mã SQL
+◉ docs/            # Tài liệu hướng dẫn
+◉ public/          # Là điểm đầu vào của hệ thống
+◉ routes/          # Định nghĩa các route của hệ thống
+◉ test/            # Thư mục chứa các test case
+◉ vendor/          # Thư mục chứa các gói Composer
+◉ .env.development # File cấu hình môi trường phát triển
+◉ .gitignore       # Các file cần bỏ qua khi push lên Git
+◉ composer.json    # Định nghĩa các package cần thiết
+◉ composer.lock    # Lưu trạng thái package đã cài đặt
+◉ readme.md        # Tài liệu hướng dẫn
 ```
 
 ### INSTALL

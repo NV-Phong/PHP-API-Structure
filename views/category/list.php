@@ -39,9 +39,9 @@
                     <td><?= htmlspecialchars($category['CategoryName']) ?></td>
                     <td><?= htmlspecialchars($category['CategoryDescription']) ?></td>
                     <td>
-                        <a href="/categories/<?= $category['IDCategory'] ?>">Xem</a> |
-                        <a href="/categories/edit/<?= $category['IDCategory'] ?>">Sửa</a> |
-                        <a href="/categories/delete/<?= $category['IDCategory'] ?>" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a>
+                        <a href="/category/<?= $category['IDCategory'] ?>">Xem</a> |
+                        <a href="/category/edit/<?= $category['IDCategory'] ?>">Sửa</a> |
+                        <a href="/category/delete/<?= $category['IDCategory'] ?>" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

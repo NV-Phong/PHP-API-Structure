@@ -1,5 +1,5 @@
 <?php
-namespace Phong\Controller\View;
+namespace Phong\Controller;
 use Phong\Model\Category;
 use PDO;
 
@@ -22,7 +22,7 @@ class CategoryController
    {
       $category = $this->categoryModel->getById($id);
       if ($category) {
-         include "../views/categories/show.php";
+         include "../views/category/show.php";
       } else {
          echo "Không tìm thấy danh mục";
       }

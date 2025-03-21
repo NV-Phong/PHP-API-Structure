@@ -9,7 +9,7 @@ function RouterConfig($container)
     // Truyền container vào Router
     $router = new Router(new \Illuminate\Events\Dispatcher(), $container);
 
-    $routes = require __DIR__ . '/../routes/View.php';
+    $routes = require __DIR__ . '/../routes/routes.php';
     $routes($router);
 
     $request = Request::createFromGlobals();

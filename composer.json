@@ -2,14 +2,22 @@
     "name": "phong/php-learning",
     "autoload": {
         "psr-4": {
-            "Phong\\PhpLearning\\": "app/"
+            "Phong\\": "app/"
         }
+    },
+    "scripts": {
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:3000 -t public"
+        ]
     },
     "authors": [
         {
             "name": "NV-Phong",
-            "email": "0h9ng03@gmail.com"
+            "email": "ui.engineer.workspace@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
 }

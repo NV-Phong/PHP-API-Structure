@@ -9,7 +9,7 @@ PHP-API-Structure/
 │── app/             # Chứa mã nguồn chính của API
 │── config/          # Cấu hình hệ thống
 │── database/        # Chứa mã SQL
-│── docs/            # Giải thích về các khái niệm và các packages được sử dụng trong dự án
+│── docs/            # Tài liệu hướng dẫn
 │── public/          # Là điểm đầu vào của hệ thống
 │── routes/          # Định nghĩa các route của hệ thống
 │── test/            # Thư mục chứa các test case
